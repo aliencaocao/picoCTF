@@ -11,4 +11,3 @@ d = gmpy2.invert(e, (p - 1) * (q - 1))
 m = pow(c, d, n)
 byt = long_to_bytes(m)
 print(byt.decode('ascii', errors='ignore'))
-

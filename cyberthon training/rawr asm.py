@@ -15,13 +15,13 @@ def solve():
     ans = [None] * (max(num) + 1)
     for i in range(20):
         target = strings_no[i] + 5
-        print(num[i])
+        # print(num[i])
         ans[num[i]] = chr(target)
     return ans
 
 
 ans = solve()
-''.join(ans)
+print(''.join(ans))
 
 """
 Assembly code:

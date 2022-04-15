@@ -15,19 +15,12 @@ io.sendline(b'20517396')
 pause()
 
 # lvl 3 v1
-v2 = b'0'  # gives eax=2, works
-v3 = b'1'  # gives eax=3, shld give 1
-v4 = b'a'  # gives eax=3 ,works
-v5 = b'2'  # gives eax=3, shld give 2
-v6 = b'3'  # gives eax=4, works
+v2 = b'0'
+v3 = b'1'
+v4 = b'a'
+v5 = b'2'
+v6 = b'3'
 io.sendline(v2 + v3 + v4 + v5 + v6)
 
-# # lvl 3 v2
-# v2 = b'1'  # gives eax=3, works
-# v3 = b'1'  # gives eax=3, works
-# v4 = b'a'  # gives eax=3, shld give 5
-# v5 = b'0'  # gives eax=2, works
-# v6 = b'0'  # gives eax=2, works
-# io.sendline(v2 + v3 + v4 + v5 + v6)
 pause()
 io.interactive()
