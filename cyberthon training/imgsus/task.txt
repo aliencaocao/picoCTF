@@ -1,0 +1,12 @@
+Alice sent an image to Bob.
+However something seems odd.
+
+$ ls -l
+-rw-r--r--@ 1 ragulbalaji  staff  1130827 Mar 30 21:38 SentByAlice.png
+-rw-r--r--@ 1 ragulbalaji  staff  1056041 Mar 30 21:46 RecvByBob.png
+
+$ shasum *
+a570c040a063e545a9c5efb1f8715d1a4e749fbe  SentByAlice.png
+b328e352f57157b838e695a7fbfe802a6fc29592  RecvByBob.png
+
+What is going on?
